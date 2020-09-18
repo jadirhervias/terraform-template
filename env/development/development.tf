@@ -9,6 +9,7 @@ provider "aws" {
   secret_key                  = "admin"
   region                      = "us-east-1" # Norte de Virginia
   version                     = "~> 3.0"
+  profile                     = "localstack"
   s3_force_path_style         = true
   skip_credentials_validation = true
   skip_metadata_api_check     = true

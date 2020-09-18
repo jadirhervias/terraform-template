@@ -10,13 +10,13 @@ $ terraform init -input=false
 $ terraform validate
 
 # Plan infraestructure
-$ terraform plan -input=false -var-file=<environment>.auto.tfvars.json
+$ terraform plan -var-file=<environment>.auto.tfvars.json
 
 # "Deploy"/execute infraestructure
-$ terraform apply -input=false
+$ terraform apply
 
 # "Deploy"/execute - Omit approvement
-terraform apply -input=false -auto-approve
+terraform apply -auto-approve
 
 # Destroy Infrastructura
 terraform destroy
